@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD Project Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1><i class="fas fa-brain"></i> ADHD Project Manager</h1>
+        <nav>
+            <ul>
+                <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#tasks"><i class="fas fa-tasks"></i> Tasks</a></li>
+                <li><a href="#timer"><i class="fas fa-clock"></i> Pomodoro Timer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="projects">
+            <h2>Your Projects</h2>
+            <form id="project-form">
+                <input type="text" id="project-name" placeholder="Project Name" required>
+                <textarea id="project-description" placeholder="Project Description" required></textarea>
+                <input type="text" id="project-tech-stack" placeholder="Tech Stack (comma-separated)">
+                <textarea id="project-motivation" placeholder="Project Motivation"></textarea>
+                <button type="submit"><i class="fas fa-plus"></i> Add Project</button>
+            </form>
+            <ul id="project-list"></ul>
+        </section>
+
+        <section id="tasks">
+            <h2>Your Tasks</h2>
+            <form id="task-form">
+                <input type="text" id="task-input" placeholder="Add a new task" required>
+                <select id="task-project">
+                    <option value="">Select Project</option>
+                </select>
+                <select id="task-priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+                <button type="submit"><i class="fas fa-plus"></i> Add Task</button>
+            </form>
+            <div id="task-filters">
+                <button id="filter-all">All</button>
+                <button id="filter-high">High Priority</button>
+                <button id="filter-medium">Medium Priority</button>
+                <button id="filter-low">Low Priority</button>
+            </div>
+            <ul id="task-list"></ul>
+        </section>
+
+        <section id="timer">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer-display">25:00</div>
+            <div id="timer-controls">
+                <button id="start-timer"><i class="fas fa-play"></i> Start</button>
+                <button id="pause-timer"><i class="fas fa-pause"></i> Pause</button>
+                <button id="reset-timer"><i class="fas fa-undo"></i> Reset</button>
+            </div>
+            <div id="session-count">Sessions completed: <span id="session-number">0</span></div>
+            <div id="timer-settings">
+                <label for="work-duration">Work Duration (minutes):</label>
+                <input type="number" id="work-duration" value="25" min="1" max="60">
+                <label for="break-duration">Break Duration (minutes):</label>
+                <input type="number" id="break-duration" value="5" min="1" max="15">
+                <button id="update-timer-settings">Update Timer Settings</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 ADHD Project Manager. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

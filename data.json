@@ -1,0 +1,87 @@
+{
+    "projects": [
+        {
+            "id": null,
+            "name": "Project Home",
+            "description": "sdfgh",
+            "techStack": [
+                "javascript"
+            ],
+            "motivation": "n nm",
+            "tasks": [],
+            "progress": 0
+        },
+        {
+            "id": null,
+            "name": "Project Home",
+            "description": "adf",
+            "techStack": [
+                "python",
+                "opencv"
+            ],
+            "motivation": "asdf e",
+            "tasks": [],
+            "progress": 0
+        },
+        {
+            "id": 1732504964334,
+            "name": "Project Home",
+            "description": "cvbnm ml",
+            "techStack": [
+                "javascript"
+            ],
+            "motivation": "n n n",
+            "tasks": [],
+            "progress": 0
+        },
+        {
+            "id": 1732504980343,
+            "name": "Iris detection for Login",
+            "description": "lk ;lk",
+            "techStack": [
+                "k j;j"
+            ],
+            "motivation": "8 9uhn",
+            "tasks": [],
+            "progress": 100
+        },
+        {
+            "id": 1732505949309,
+            "name": "Project Nexus",
+            "description": "this will be a platform where i can upload my own AI tools and bots and also can sell them to other businesses with cutting edge technology.",
+            "techStack": [
+                "html",
+                "css",
+                "javascript",
+                "python",
+                "flask"
+            ],
+            "motivation": "it can be umbrella company later.",
+            "tasks": [],
+            "progress": 0
+        }
+    ],
+    "tasks": [
+        {
+            "id": null,
+            "text": "gjkgh",
+            "projectId": null,
+            "priority": "medium",
+            "completed": false
+        },
+        {
+            "id": 1732504996493,
+            "text": "Interface",
+            "projectId": 1732504980343,
+            "priority": "medium",
+            "completed": true
+        },
+        {
+            "id": 1732505981086,
+            "text": "building ai recruitment tool",
+            "projectId": 1732505949309,
+            "priority": "medium",
+            "completed": false
+        }
+    ]
+}

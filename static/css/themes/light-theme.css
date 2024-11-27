@@ -1,0 +1,10 @@
+body.light-theme {
+    --primary-background: #ffffff;
+    --primary-text: #333333;
+    --secondary-background: #f4f4f4;
+    --accent-color: #3498db;
+    --hover-color: #2980b9;
+
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+}

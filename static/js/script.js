@@ -417,3 +417,45 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load data when page loads
     loadData();
 });
+
+
+
+class ThemeManager {
+    constructor() {
+        this.themeSelector = document.getElementById('theme-selector');
+        this.initializeTheme();
+        this.attachEventListeners();
+    }
+
+    initializeTheme() {
+        // Get saved theme or default to light
+        const savedTheme = localStorage.getItem('adhd-manager-theme') || 'light';
+        this.applyTheme(savedTheme);
+    }
+
+    attachEventListeners() {
+        this.themeSelector.addEventListener('change', (event) => {
+            const selectedTheme = event.target.value;
+            this.applyTheme(selectedTheme);
+        });
+    }
+
+    applyTheme(themeName) {
+        // Remove existing theme classes
+        document.body.classList.remove('light-theme', 'dark-theme', 'colorful-theme');
+        
+        // Add selected theme class
+        document.body.classList.add(`${themeName}-theme`);
+        
+        // Update selector to match current theme
+        this.themeSelector.value = themeName;
+        
+        // Save to local storage
+        localStorage.setItem('adhd-manager-theme', themeName);
+    }
+}
+
+// Initialize on page load
+document.addEventListener('DOMContentLoaded', () => {
+    new ThemeManager();
+});

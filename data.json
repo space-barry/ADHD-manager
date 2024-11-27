@@ -59,6 +59,31 @@
             "motivation": "it can be umbrella company later.",
             "tasks": [],
             "progress": 0
+        },
+        {
+            "id": 1732508714756,
+            "name": "AI Call agent",
+            "description": "this will attent call",
+            "techStack": [
+                "python",
+                "call"
+            ],
+            "motivation": "this is future to talk with ai",
+            "tasks": [],
+            "progress": 0
+        },
+        {
+            "id": 1732510536330,
+            "name": "Website for ADHD",
+            "description": "it will help them",
+            "techStack": [
+                "html",
+                "css",
+                "javascript"
+            ],
+            "motivation": "nothing",
+            "tasks": [],
+            "progress": 0
         }
     ],
     "tasks": [
@@ -81,6 +106,37 @@
             "text": "building ai recruitment tool",
             "projectId": 1732505949309,
             "priority": "medium",
+            "completed": false
+        },
+        {
+            "id": 1732508760026,
+            "text": "interface",
+            "projectId": 1732508714756,
+            "priority": "high",
+            "category": "admin",
+            "dueDate": "2024-11-25T09:26",
+            "timeEstimate": 5,
+            "completed": false,
+            "completedAt": null,
+            "createdAt": "2024-11-25T04:26:00.027064+00:00"
+        },
+        {
+            "id": 1732508780785,
+            "text": "call interupt",
+            "projectId": 1732508714756,
+            "priority": "high",
+            "category": "admin",
+            "dueDate": "2024-11-25T09:27",
+            "timeEstimate": 5,
+            "completed": false,
+            "completedAt": null,
+            "createdAt": "2024-11-25T04:26:20.785674+00:00"
+        },
+        {
+            "id": 1732510557397,
+            "text": "built backend",
+            "projectId": 1732510536330,
+            "priority": "low",
             "completed": false
         }
     ]

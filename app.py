@@ -192,5 +192,26 @@ def update_project_progress(project_id):
     save_data(data)
     return jsonify({'success': True})
 
+
+
+from flask import Flask, render_template, request, session
+
+app = Flask(__name__)
+app.secret_key = 'your_secret_key'  # For session management
+
+@app.route('/')
+def index():
+    # Optional: Retrieve user's theme preference from session/database
+    theme = session.get('user_theme', 'light')
+    return render_template('index.html', current_theme=theme)
+
+@app.route('/save_theme', methods=['POST'])
+def save_theme():
+    theme = request.form.get('theme', 'light')
+    session['user_theme'] = theme
+    return 'Theme saved successfully'
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)

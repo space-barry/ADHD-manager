@@ -1,15 +1,32 @@
+
+:root {
+    /* Global Variables */
+    --transition-speed: 0.3s;
+    --border-radius: 8px;
+}
+
+/* Theme Neutral Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    transition: 
+        background-color var(--transition-speed),
+        color var(--transition-speed);
+    margin: 0;
+    padding: 0;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f0f0f0;
-}
+} */
 
 header {
     background: #333;
